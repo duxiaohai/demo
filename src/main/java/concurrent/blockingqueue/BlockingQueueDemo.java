@@ -13,7 +13,7 @@ import java.util.concurrent.*;
 public class BlockingQueueDemo {
 
     public static void main(String[] args){
-        BlockingQueue BlockingQueue = new LinkedBlockingQueue();//Integer.MAX_VALUE
+        //BlockingQueue blockingQueue = new LinkedBlockingQueue();//Integer.MAX_VALUE
 
         BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
         //1.会抛异常
@@ -22,7 +22,7 @@ public class BlockingQueueDemo {
         blockingQueue.element();
 
         //2.不会抛异常
-        blockingQueue.offer("a");
+        boolean b = blockingQueue.offer("a");
         blockingQueue.poll();
         blockingQueue.peek();
 
