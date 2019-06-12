@@ -30,17 +30,11 @@ public enum EnumDemo {
         return num;
     }
 
-    public void setNum(int num) {
-        this.num = num;
-    }
 
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
     EnumDemo(int num, String message){
         this.num = num;

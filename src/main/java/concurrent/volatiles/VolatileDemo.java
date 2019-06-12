@@ -35,6 +35,7 @@ public class VolatileDemo {
 
         }
 
+
         System.out.println(Thread.currentThread().getName() + " num value:" + volatileDemo.num);
 
     }
